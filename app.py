@@ -1,5 +1,6 @@
 import dash
-from dash import html
+# from dash import html
+import dash_html_components as html
 import dash_core_components as dcc
 import plotly.express as px
 import pandas as pd
@@ -18,7 +19,7 @@ fig = px.bar(df, x="Fruit", y="Amount", color="City")
 # Trabalhando com layout
 app.layout = html.Div(id="div1",
                       children=[
-                          html.H1("First Dash", id="div1"),
+                          html.H1("First Dash", id="h1"),
 
                           html.Div("Dash: Um framework web para Python"),
 
